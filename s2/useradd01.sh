@@ -6,8 +6,8 @@ read -p "Please input prefix: " prefix
 for i in `seq 1 $num`
 do
     user=$prefix$i
-    useradd $user
-    echo "123" | passwd --stdin $user &> /dev/null
+    sudo useradd $user
+    echo "$user:123" | sudo chpasswd 
     if [ $? -eq 0 ]; then
         echo "$user is created."
     fi

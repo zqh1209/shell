@@ -4,7 +4,7 @@ id $user &> /dev/null
 if [ $? -eq 0 ] ; then
     echo "User $user  already exists."
 else
-    useradd $user
+    sudo useradd $user
     if [ $? -eq 0 ]; then
         echo "User $user created successfully"
     fi
