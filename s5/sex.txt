@@ -1,0 +1,6 @@
+aaa	m
+bbbb	f
+cc	m
+ddddd	f
+e	m
+ggg	f
